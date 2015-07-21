@@ -75,6 +75,20 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 TARGET_KERNEL_ADDITIONAL_CONFIG := cyanogenmod_debug_config
 endif
 
+# Fusion Optimizations
+FUSION_OPT=true
+FUSION_O3 := true
+FUSION_STRICT := true
+FUSION_OFAST := true
+FUSION_KRAIT := true
+FUSION_GRAPHITE := true
+FUSION_PIPE := true
+FUSION_ENABLE_GCCONLY := true
+FLOOP_NEST_OPTIMIZE := true
+FUSION_FFAST_MATH := true
+TARGET_FUSION_ROM := 4.9
+TARGET_FUSION_KERNEL := 4.9-sm
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
