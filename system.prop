@@ -1,12 +1,11 @@
 # Audio
 tunnel.audio.encode=false
-audio.offload.disable=1
-av.offload.enable=false
-av.streaming.offload.enable=false
-audio.offload.buffer.size.kb=240
-audio.offload.gapless.enabled=false
+av.offload.enable=true
+av.streaming.offload.enable=true
+audio.offload.buffer.size.kb=64
+audio.offload.gapless.enabled=true
 audio.offload.pcm.16bit.enable=false
-audio.offload.pcm.24bit.enable=false
+audio.offload.pcm.24bit.enable=true
 use.voice.path.for.pcm.voip=true
 vidc.enc.narrow.searchrange=1
 
@@ -29,7 +28,6 @@ debug.mdpcomp.idletime=600
 persist.hwc.mdpcomp.enable=true
 persist.hwc.ptor.enable=true
 ro.opengles.version=196608
-ro.qualcomm.cabl=0
 debug.enable.sglscale=1
 
 # GPS

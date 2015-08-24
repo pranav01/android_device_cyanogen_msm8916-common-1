@@ -95,8 +95,7 @@ PRODUCT_PACKAGES += \
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck \
-    make_ext4fs \
-    setup_fs
+    make_ext4fs
 
 # FM
 PRODUCT_PACKAGES += \
@@ -132,6 +131,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     qcmediaplayer
 
+ifneq ($(QCPATH),)
+PRODUCT_PACKAGES += libOmxVdecHevc
+endif
+
 PRODUCT_BOOT_JARS += \
     qcmediaplayer
 
@@ -146,7 +149,6 @@ PRODUCT_PACKAGES += \
     init.qcom.coex.sh
 
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.qcom.rc \
     init.qcom.power.rc \
     init.qcom.usb.rc \
